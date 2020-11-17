@@ -1,0 +1,258 @@
+[TITLE]
+
+
+[JUNCTIONS]
+;ID              	Elev        	Demand      	Pattern         
+ 2               	0           	0           	                	;
+ SPS             	0           	1           	SPS1P           	; LSL Sample Port
+ 3               	0           	0           	                	;
+ 4               	0           	0           	                	;
+ 6               	0           	0           	                	;
+ 7               	0           	0           	                	;
+ F4H             	0           	1           	F4HP            	; F4 Hot
+ F4C             	0           	1           	F4CP            	; F4 Cold
+ 10              	0           	0           	                	;
+ 10a             	0           	0           	                	; new node to add lead source near F3H
+ 11              	0           	0           	                	;
+ 11a             	0           	0           	                	; new node to add lead source near F3C
+ F3H             	0           	1           	F3HP            	; F3 Hot
+ F3C             	0           	1           	F3CP            	; F3 Cold
+ 14              	0           	0           	                	;
+ TOL1C           	0           	1           	TOL1CP          	; Toilet
+ 16              	0           	0           	                	;
+ 17              	0           	0           	                	;
+ F2H             	0           	1           	F2HP            	; F2 Hot
+ F2C             	0           	1           	F2CP            	; F2 Cold
+ 20              	0           	0           	                	;
+ 21              	0           	0           	                	;
+ SH1H            	0           	1           	SH1HP           	; Shower Hot
+ SH1C            	0           	1           	SH1CP           	; Shower Cold
+ 24              	0           	0           	                	;
+ F1H             	0           	1           	F1HP            	; F1 Hot
+ F1C             	0           	1           	F1CP            	; F1 Cold
+ 8               	0           	0           	                	;
+ ;HWH_IN          	0           	0           	                	;
+; HWH_OUT         	0           	0           	                	;
+ HWS             	0           	1           	HWS1P           	; Hot Water Heater Sample Port
+ Source 		100		-1		SourceCP		; Source
+
+[RESERVOIRS]
+;ID              	Head        	Pattern         
+; 1               	100         	                	;
+
+[TANKS]
+;ID              	Elevation   	InitLevel   	MinLevel    	MaxLevel    	Diameter    	MinVol      	VolCurve
+ 5                      0     		3.0291          0 	        3.03           	1.5          	0.                       ;
+
+[PIPES]
+;ID              	Node1           	Node2           	Length      	Diameter    	Roughness   	MinorLoss   	Status
+ 1               	8               	2               	6.333       	0.633       	130         	0           	Open  	;
+ 2               	2               	3               	6.7083      	0.5         	130         	0           	Open  	; 6.333 Officially, changed for lead simulation
+ SPS1            	2               	SPS             	0.0010      	0.5         	130         	0           	Open  	; Sample Port Pipe
+ 3               	3               	4               	0.4375      	0.5         	130         	0           	Open  	;
+ 4               	3               	5	          	1.5208      	0.5         	130         	0           	Open  	;
+ 5               	5	         	7               	9.7917      	0.5         	130         	0           	Open  	;
+ 6               	7               	10              	10.9583     	0.5         	130         	0           	Open  	;
+ 7               	10              	17              	10.0833     	0.5         	130         	0           	Open  	;
+ 8               	17              	20              	6.3333      	0.5         	130         	0           	Open  	;
+ 9               	20              	24              	9.7917      	0.5         	130         	0           	Open  	;
+ 10              	4               	6               	7.0000      	0.5         	130         	0           	Open  	;
+ 11              	6               	11              	10.3750     	0.5         	130         	0           	Open  	;
+ 12              	11              	14              	4.1667      	0.5         	130         	0           	Open  	;
+ 13              	14              	TOL1C           	1.6875      	0.5         	130         	0           	Open  	;Toilet
+ 14              	14              	16              	5.0417      	0.5         	130         	0           	Open  	;
+ 15              	16              	21              	9.8333      	0.5         	130         	0           	Open  	;
+ 16              	21              	F1C             	6.7917      	0.5         	130         	0           	Open  	;F1 Cold
+ 17              	7               	F4H             	10.6667     	0.5         	130         	0           	Open  	;F4 Hot
+ 18              	6               	F4C             	10.5833     	0.5         	130         	0           	Open  	;F4 Cold
+ 19              	10a             	F3H             	2.5900      	0.5         	130         	0           	Open  	;F3 Hot, can be lead source 20mL
+ 19a             	10              	10a             	7.1392      	0.5         	130         	0           	Open  	; New segment
+ 20              	11a             	F3C             	2.5900      	0.5         	130         	0           	Open  	;F3 Cold, can be lead source 20mL
+ 20a             	11              	11a             	6.9933      	0.5         	130         	0           	Open  	; New segment
+ 21              	17              	F2H             	9.4167      	0.5         	130         	0           	Open  	;F2 Hot
+ 22              	16              	F2C             	9.2083      	0.5         	130         	0           	Open  	;F2 Cold
+ 23              	20              	SH1H            	4.0208      	0.5         	130         	0           	Open  	;Shower Hot
+ 24              	21              	SH1C            	3.6458      	0.5         	130         	0           	Open  	;Shower Cold
+ 25              	24              	F1H             	2.8542      	0.5         	130         	0           	Open  	;F1 Hot
+ 26              	Source               	8               	0.25       	0.5         	130         	0           	Open  	;
+; HWH             	HWH_IN          	HWH_OUT         	3.025       	18          	130         	0           	Open  	;
+ HWHSP           	5	         	HWS             	0.0010      	0.5         	130         	0           	Open  	; Sample Port on Hot Water Heater
+
+[PUMPS]
+;ID              	Node1           	Node2           	Parameters
+
+[VALVES]
+;ID              	Node1           	Node2           	Diameter    	Type	Setting     	MinorLoss   
+
+[TAGS]
+
+[DEMANDS]
+;Junction        	Demand      	Pattern         	Category
+
+[STATUS]
+;ID              	Status/Setting
+
+[PATTERNS]
+;ID              	Multipliers
+;
+ TOL1CP      0          
+
+SPS1P      0
+
+F4HP       0     	
+
+F4CP       0     
+
+F3HP       0 
+
+F3CP        0    	
+
+F2HP         0   	
+
+F2CP        0    	
+
+SH1HP   0
+
+SH1CP   0 
+
+F1HP    0 
+
+F1CP 0  
+
+HWS1P 0 
+
+SourceCP 0         
+
+[CURVES]
+;ID              	X-Value     	Y-Value
+
+[CONTROLS]
+
+
+
+[RULES]
+
+
+
+[ENERGY]
+ Global Efficiency  	75
+ Global Price       	0
+ Demand Charge      	0
+
+[EMITTERS]
+;Junction        	Coefficient
+
+[QUALITY]
+;Node            	InitQual
+
+[SOURCES]
+;Node            	Type        	Quality     	Pattern
+
+[REACTIONS]
+;Type     	Pipe/Tank       	Coefficient
+ Bulk     	1               	18.4242
+
+
+[REACTIONS]
+ Order Bulk            	1
+ Order Tank            	1
+ Order Wall            	1
+ Global Bulk           	0
+ Global Wall           	0
+ Limiting Potential    	140.0
+ Roughness Correlation 	0
+
+[MIXING]
+;Tank            	Model
+
+[TIMES]
+ Duration           	0:00 
+ Hydraulic Timestep 	0:00:10 
+ Quality Timestep   	0:00:01 
+ Pattern Timestep   	0:00:10 
+ Pattern Start      	0:00 
+ Report Timestep    	0:00:01 
+ Report Start       	0:00 
+ Start ClockTime    	12 am
+ Statistic          	NONE
+
+[REPORT]
+ Status             	Yes
+ Summary            	No
+ Page               	0
+
+[OPTIONS]
+ Units              	GPM
+ Headloss           	H-W
+ Specific Gravity   	1
+ Viscosity          	1
+ Trials             	50
+ Accuracy           	0.001
+ CHECKFREQ          	2
+ MAXCHECK           	20
+ DAMPLIMIT          	0
+ Unbalanced         	Continue 10
+ Pattern            	1
+ Demand Multiplier  	1.0
+ Emitter Exponent   	0.5
+ Quality            	Chemical ug/L
+ Diffusivity        	1
+ Tolerance          	0.0001
+
+[COORDINATES]
+;Node            	X-Coord         	Y-Coord
+ 2               	1200.00         	6500.00         
+ SPS             	1200.00         	6500.00         
+ 3               	1700.00         	6500.00         
+ 4               	2250.00         	6700.00         
+ 6               	3250.00         	6700.00         
+ 7               	3000.00         	6150.00         
+ F4H             	3000.00         	5000.00         
+ F4C             	3250.00         	5000.00         
+ 10              	4100.00         	6150.00         
+ 10a             	4100.00         	6150.00         
+ 11              	4350.00         	6700.00         
+ 11a             	4350.00         	6700.00         
+ F3H             	4100.00         	5000.00         
+ F3C             	4350.00         	5000.00         
+ 14              	5150.00         	6700.00         
+ TOL1C           	5150.00         	7400.00         
+ 16              	5750.00         	6700.00         
+ 17              	5500.00         	6150.00         
+ F2H             	5500.00         	5000.00         
+ F2C             	5750.00         	5000.00         
+ 20              	6500.00         	6150.00         
+ 21              	6750.00         	6700.00         
+ SH1H            	6500.00         	5000.00         
+ SH1C            	6750.00         	5000.00         
+ 24              	7400.00         	6150.00         
+ F1H             	7400.00         	5000.00         
+ F1C             	7650.00         	5000.00         
+ 8               	700.00          	6500.00         
+; HWH_IN          	2172.69         	6106.09         
+; HWH_OUT         	2341.99         	6151.24         
+ HWS             	2250.00			6150.00         
+ Source               	700.00          	7200.00         
+ 5               	2250.00         	6150.00         
+
+[VERTICES]
+;Link            	X-Coord         	Y-Coord
+ 16              	7650.00         	6700.00         
+
+[LABELS]
+;X-Coord           Y-Coord          Label & Anchor Node
+ 5000.00          7900.00          "Toilet"                 
+ 3000.00          4800.00          "F4"                 
+ 4150.00          4800.00          "F3"                 
+ 5500.00          4800.00          "F2"                 
+ 6500.00          4800.00          "Shower"                 
+ 7400.00          4800.00          "F1"                 
+ 2000.00          7500.00          "EPA Test Home System"                 
+
+[BACKDROP]
+ DIMENSIONS     	0.00            	0.00            	10000.00        	10000.00        
+ UNITS          	None
+ FILE           	
+ OFFSET         	0.00            	0.00            
+
+[END]

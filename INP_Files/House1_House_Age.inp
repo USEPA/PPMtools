@@ -1,0 +1,398 @@
+[TITLE]
+
+
+[JUNCTIONS]
+;ID              	Elev        	Demand      	Pattern         
+ 3               	0           	0           	                	;
+ 2               	0           	0           	                	;
+ SP1C            	0           	1           	SP1CP           	;
+ 4               	0           	0           	                	;
+ 6               	0           	0           	                	;
+ F3C             	0           	1           	F3CP            	;
+ 8               	0           	0           	                	;
+ REC             	0           	1           	RECP            	;
+ 10              	0           	0           	                	;
+ 11              	0           	0           	                	;
+ 12              	0           	0           	                	;
+ F1C             	0           	1           	F1CP            	;
+ SH2C            	0           	1           	SH2CP           	;
+ 15              	0           	0           	                	;
+ F4C             	0           	1           	F4CP            	;
+ WAC             	0           	1           	WACP            	;
+ 18              	0           	0           	                	;
+ 19              	0           	0           	                	;
+ SP2C            	0           	1           	SP2CP           	;
+ TOL1C           	0           	1           	TOL1CP          	;
+ 22              	0           	0           	                	;
+ 23              	0           	0           	                	;
+ 24              	0           	0           	                	;
+ F2C             	0           	1           	F2CP            	;
+ SH1C            	0           	1           	SH1CP           	;
+ TOL2C           	0           	1           	TOL2CP          	;
+ 29              	0           	0           	                	;
+ F3H             	0           	1           	F3HP            	;
+ 31              	0           	0           	                	;
+ 32              	0           	0           	                	;
+ SH2H            	0           	1           	SH2HP           	;
+ 34              	0           	0           	                	;
+ WAH             	0           	1           	WAHP            	;
+ F4H             	0           	1           	F4HP            	;
+ 37              	0           	0           	                	;
+ F1H             	0           	1           	F1HP            	;
+ 39              	0           	0           	                	;
+ F2H             	0           	1           	F2HP            	;
+ 41              	0           	0           	                	;
+ SH1H            	0           	1           	SH1HP           	;
+ 7               	0           	0           	                	;
+ DWH             	0           	1           	DWHP            	;
+ Source          	50           	-1          	SourceCP        	;
+
+[RESERVOIRS]
+;ID              	Head        	Pattern         
+
+[TANKS]
+;ID              	Elevation   	InitLevel   	MinLevel    	MaxLevel    	Diameter    	MinVol      	VolCurve
+ 5                      0     		3.02591         0          	3.03           	1.5	        0.0                ;
+
+
+
+[PIPES]
+;ID              	Node1           	Node2           	Length      	Diameter    	Roughness   	MinorLoss   	Status
+ 43              	3               	2               	18.95833    	0.5         	130         	0           	Open  	;
+ 2               	2               	SP1C            	5.4375      	0.5         	130         	0           	Open  	;
+ 3               	2               	4               	19.625      	0.5         	130         	0           	Open  	;
+ 4               	4               	5               	9.3125      	0.5         	130         	0           	Open  	;
+ 5               	4               	6               	1.770833    	0.5         	130         	0           	Open  	;
+ 6               	6               	F3C             	8.9166      	0.5         	130         	0           	Open  	;
+ 7               	6               	8               	4.0833      	0.5         	130         	0           	Open  	;
+ 8               	8               	REC             	2.4166      	0.5         	130         	0           	Open  	;
+ 9               	8               	10              	2           	0.5         	130         	0           	Open  	;
+ 10              	10              	11              	1.95833     	0.5         	130         	0           	Open  	;
+ 11              	11              	12              	3.125       	0.5         	130         	0           	Open  	;
+ 12              	11              	F1C             	1.45833     	0.5         	130         	0           	Open  	;
+ 13              	12              	SH2C            	1.33        	0.5         	130         	0           	Open  	;
+ 14              	12              	15              	4.4166      	0.5         	130         	0           	Open  	;
+ 15              	15              	F4C             	2.9166      	0.5         	130         	0           	Open  	;
+ 16              	15              	WAC             	6           	0.5         	130         	0           	Open  	;
+ 17              	10              	18              	0.29166     	0.5         	130         	0           	Open  	;
+ 18              	18              	19              	5.25        	0.5         	130         	0           	Open  	;
+ 19              	19              	SP2C            	5.75        	0.5         	130         	0           	Open  	;
+ 21              	18              	22              	10          	0.5         	130         	0           	Open  	;
+ 22              	22              	F2C             	3.645833    	0.5         	130         	0           	Open  	;
+ 23              	22              	23              	3           	0.5         	130         	0           	Open  	;
+ 24              	23              	SH1C            	4.5625      	0.5         	130         	0           	Open  	;
+ 25              	23              	24              	5           	0.5         	130         	0           	Open  	;
+ 26              	24              	TOL2C           	3.25        	0.5         	130         	0           	Open  	;
+ 28              	5               	29              	9.145833    	0.5         	130         	0           	Open  	;
+ 29              	29              	F3H             	9.5833      	0.5         	130         	0           	Open  	;
+ 30              	29              	31              	6.54166     	0.5         	130         	0           	Open  	;
+ 31              	31              	32              	3.9166      	0.5         	130         	0           	Open  	;
+ 32              	32              	SH2H            	1.75        	0.5         	130         	0           	Open  	;
+ 33              	32              	34              	4.9166      	0.5         	130         	0           	Open  	;
+ 34              	34              	WAH             	6           	0.5         	130         	0           	Open  	;
+ 35              	34              	F4H             	2.75        	0.5         	130         	0           	Open  	;
+ 36              	31              	37              	0.9166      	0.5         	130         	0           	Open  	;
+ 37              	37              	F1H             	1.66        	0.5         	130         	0           	Open  	;
+ 38              	37              	39              	11.125      	0.5         	130         	0           	Open  	;
+ 39              	39              	F2H             	2.95833     	0.5         	130         	0           	Open  	;
+ 40              	39              	41              	3           	0.5         	130         	0           	Open  	;
+ 41              	41              	SH1H            	3.895833    	0.5         	130         	0           	Open  	;
+ 44              	19              	TOL1C           	4.104166    	0.5         	130         	0           	Open  	;
+ 20              	Source          	7               	0.25        	0.5         	130         	0           	Open  	;
+ 1               	7               	3               	60.0       	0.625       	130         	0           	Open  	;
+ 27              	F3H             	DWH             	7           	0.5         	130         	0           	Open  	;
+
+[PUMPS]
+;ID              	Node1           	Node2           	Parameters
+
+[VALVES]
+;ID              	Node1           	Node2           	Diameter    	Type	Setting     	MinorLoss   
+
+[TAGS]
+
+[DEMANDS]
+;Junction        	Demand      	Pattern         	Category
+
+[STATUS]
+;ID              	Status/Setting
+
+[PATTERNS]
+;ID              	Multipliers
+;First Floor Bathroom Faucet Cold Water						
+ F1CP            	0	0	0	0	0	0
+ F1CP            	0	0	0	0	0	0
+ F1CP            	0	0	0	0	0	0
+ F1CP            	0.8888	0	0	0	0	0
+;First Floor Bathroom Faucet Hot Water						
+ F1HP            	0	0	0	0	0	0
+ F1HP            	0	0	0	0	0	0
+ F1HP            	0	0	0	0	0	0
+ F1HP            	0	0	0	0	0	0
+;Second Floor Bathroom Faucet Cold Water						
+ F2CP            	0	0	0	0	0	0
+ F2CP            	0	0	0	0	0	0
+ F2CP            	0	0	0.5515	0	0	0
+ F2CP            	0	0	0	0	0	0.0808
+;Second Floor Bathroom Faucet Hot Water						
+ F2HP            	0	0	0	0	0	0
+ F2HP            	0	0	0	0	0	0.1355
+ F2HP            	0	0	0	0.9896	0	0.6544
+ F2HP            	0	0	0	0	0	0
+;First Floor Kitchen Faucet Cold Water						
+ F3CP            	0	0	0	0	0.9012	0
+ F3CP            	0	0	0	0	0	0
+ F3CP            	0	0	0	0	0	0
+ F3CP            	0	0	0	0	0.3822	0
+;First Floor Kitchen Faucets Hot Water						
+ F3HP            	0	0	0	0	0	0
+ F3HP            	0	0.4154	0	0	0	0.9633
+ F3HP            	0	0.7241	0	0	0	0
+ F3HP            	0	0	0	0	0	0
+;Utility Faucet Cold Water						
+ F4CP            	0	0	0.2008	0	0	0
+ F4CP            	0.9084	0	0	0	0	0
+ F4CP            	0	0.4978	0	0	0	0
+ F4CP            	0	0	0	0	0	0
+;Utility Faucet Hot Water						
+ F4HP            	0	0	0	0	0	0
+ F4HP            	0	0	0	0	0	0
+ F4HP            	0	0	0	0	0.2237	0
+ F4HP            	0.9645	0	0	0	0	0
+;First Floor Toilet 						
+ TOL1CP            	0	0	0	0	0	0
+ TOL1CP            	0	0	0	0	0.6768	0.7336
+ TOL1CP            	0	0	0	0	0	0.1619
+ TOL1CP            	0	0	0	0	0	0
+;Second Floor Toilet 						
+ TOL2CP            	0	0	0	0	0	0
+ TOL2CP            	0	0	0.5159	0	0	0
+ TOL2CP            	0	0	0	0	0.8138	0
+ TOL2CP            	0	0	0	0	0	0
+;Second Floor Shower Cold Water						
+ SH1CP            	0	0	0	0	0	0
+ SH1CP            	0	0	0.3242	0	0	0.6539
+ SH1CP            	0	0	0	0	0.6058	0
+ SH1CP            	0	0	0	0	0	0
+;Second Floor Shower Hot Water						
+ SH1HP            	0	0	0	0	0	0
+ SH1HP            	0	0	0	0	0	0
+ SH1HP            	0	0	0	0	0	0
+ SH1HP            	0	0	0.7915	0	0	0
+;First Floor Shower Cold Water						
+ SH2CP            	0	0	0	0.3704	0	0
+ SH2CP            	0	0	0.66	0	0	0
+ SH2CP            	0	0.5614	0	0.0261	0	0
+ SH2CP            	0	0	0.3631	0	0	0
+;First Floor Shower Hot Water						
+ SH2HP            	0	0	0	0	0	0
+ SH2HP            	0	0	0	0	0	0
+ SH2HP            	0	0.8389	0	0	0	0
+ SH2HP            	0.5798	0.5654	0	0	0	0
+;Clothes Washer Cold Water						
+ WACP            	0.4253	0	0	0	0	0
+ WACP            	0	0	0	0	0	0
+ WACP            	0.6719	0	0	0	0	0
+ WACP            	0	0	0	0	0	0
+;Clothes Washer Hot Water						
+ WAHP            	0	0.2298	0	0	0	0
+ WAHP            	0	0	0	0	0	0
+ WAHP            	0	0	0	0	0	0
+ WAHP            	0	0	0.5206	0	0	0
+;Outside Spigot Cold Water						
+ SP1CP            	0	0	0	0	0	0.9261
+ SP1CP            	0	0	0	0	0	0
+ SP1CP            	0	0	0	0	0	0
+ SP1CP            	0	0	0	0	0	0
+;Outside Spigot Cold Water						
+ SP2CP            	0	0	0.4104	0	0.6971	0
+ SP2CP            	0	0	0	0	0	0
+ SP2CP            	0	0	0	0	0.3277	0.0492
+ SP2CP            	0	0	0	0	0	0
+;Refrigerator Cold Water						
+ RECP            	0	0	0	0	0	0
+ RECP            	0	0	0	0	0	0
+ RECP            	0	0	0	0	0.4967	0
+ RECP            	0	0	0	0	0	0
+;Dishwasher Hot Water						
+ DWHP            	0	0	0	0	0	0
+ DWHP            	0	0	0	0	0.6454	0
+ DWHP            	0	0	0.9762	0	0	0.1668
+ DWHP            	0	0	0	0	0	0
+;Source Cold Water Into House						
+ SourceCP            	0.4253	0.2298	0.6112	0.3704	1.5983	0.9261
+ SourceCP            	0.9084	0.4154	1.5001	0	1.3222	2.4863
+ SourceCP            	0.6719	2.6222	1.5277	1.0157	2.4677	1.0323
+ SourceCP            	2.4331	0.5654	1.6752	0	0.3822	0.0808
+
+
+
+[CURVES]
+;ID              	X-Value     	Y-Value
+
+[CONTROLS]
+
+
+
+
+
+
+[RULES]
+
+
+
+
+
+
+[ENERGY]
+ Global Efficiency  	75
+ Global Price       	0
+ Demand Charge      	0
+
+[EMITTERS]
+;Junction        	Coefficient
+
+[QUALITY]
+;Node            	InitQual
+
+[SOURCES]
+;Node            	Type        	Quality     	Pattern
+
+[REACTIONS]
+;Type     	Pipe/Tank       	Coefficient
+ Bulk     	1               	18.4242
+
+
+[REACTIONS]
+ Order Bulk            	1
+ Order Tank            	1
+ Order Wall            	1
+ Global Bulk           	0
+ Global Wall           	0
+ Limiting Potential    	140
+ Roughness Correlation 	0
+
+[MIXING]
+;Tank            	Model
+
+[TIMES]
+ Duration           	48:00 
+ Hydraulic Timestep 	0:10 
+ Quality Timestep   	0:10 
+ Pattern Timestep   	1:00 
+ Pattern Start      	0:00 
+ Report Timestep    	0:10 
+ Report Start       	0:00 
+ Start ClockTime    	12 am
+ Statistic          	NONE
+
+[REPORT]
+ Status             	No
+ Summary            	No
+ Page               	0
+
+[OPTIONS]
+ Units              	GPM
+ Headloss           	H-W
+ Specific Gravity   	1
+ Viscosity          	1
+ Trials             	40
+ Accuracy           	0.001
+ CHECKFREQ          	2
+ MAXCHECK           	10
+ DAMPLIMIT          	0
+ Unbalanced         	Continue 10
+ Pattern            	1
+ Demand Multiplier  	1.0
+ Emitter Exponent   	0.5
+ Quality            	Age ug/L
+ Diffusivity        	1
+ Tolerance          	0.0001
+
+[COORDINATES]
+;Node            	X-Coord         	Y-Coord
+ 3               	7000.00         	8000.00         
+ 2               	7000.00         	7000.00         
+ SP1C            	7500.00         	7000.00         
+ 4               	7000.00         	5500.00         
+ 6               	6000.00         	5500.00         
+ F3C             	6000.00         	4200.00         
+ 8               	5000.00         	5500.00         
+ REC             	5000.00         	6000.00         
+ 10              	4000.00         	5500.00         
+ 11              	4000.00         	4500.00         
+ 12              	4000.00         	3500.00         
+ F1C             	3000.00         	4500.00         
+ SH2C            	3000.00         	3500.00         
+ 15              	4000.00         	2000.00         
+ F4C             	2000.00         	2000.00         
+ WAC             	6350.00         	2000.00         
+ 18              	1800.00         	5500.00         
+ 19              	200.00          	5500.00         
+ SP2C            	200.00          	6000.00         
+ TOL1C           	1500.00         	4000.00         
+ 22              	1800.00         	6400.00         
+ 23              	1800.00         	7200.00         
+ 24              	1800.00         	8000.00         
+ F2C             	2500.00         	6400.00         
+ SH1C            	2800.00         	7200.00         
+ TOL2C           	800.00          	8000.00         
+ 29              	6300.00         	5200.00         
+ F3H             	6300.00         	4200.00         
+ 31              	4300.00         	5200.00         
+ 32              	4300.00         	3200.00         
+ SH2H            	3000.00         	3200.00         
+ 34              	4300.00         	1700.00         
+ WAH             	6350.00         	1700.00         
+ F4H             	2000.00         	1700.00         
+ 37              	2800.00         	5200.00         
+ F1H             	2800.00         	4500.00         
+ 39              	1500.00         	6200.00         
+ F2H             	2500.00         	6200.00         
+ 41              	1500.00         	7500.00         
+ SH1H            	2800.00         	7500.00         
+ 7               	7000.00         	9000.00         
+ DWH             	6300.00         	3700.00         
+ Source          	7000.00         	9200.00         
+ 5               	8000.00         	3500.00         
+
+[VERTICES]
+;Link            	X-Coord         	Y-Coord
+ 4               	8003.55         	5497.63         
+ 28              	7695.50         	5201.42         
+ 38              	1503.02         	5198.53         
+ 44              	195.58          	3996.60         
+
+[LABELS]
+;X-Coord           Y-Coord          Label & Anchor Node
+ 7612.56          7097.16          "SP1C" SP1C            
+ 7683.65          3364.93          "HWH"                 
+ 5671.77          4081.63          "F3C" F3C             
+ 4812.61          6473.59          "REC" REC             
+ 3289.12          4397.96          "F1C" F1C             
+ 3050.95          3720.38          "SH2C" SH2C            
+ 5527.25          2263.03          "WAC" WAC             
+ 2031.99          2263.03          "F4C" F4C             
+ -518.71          6173.47          "SP2C"                 
+ 31.41            3893.52          "TOL1C"                 
+ 2671.80          6516.59          "F2C" F2C             
+ 2950.68          7159.86          "SH1C" SH1C            
+ 681.28           7808.06          "TOL2C" TOL2C           
+ 6386.05          4353.74          "F3H" F3H             
+ 3299.76          3151.66          "SH2H" SH2H            
+ 5906.40          1919.43          "WAH" WAH             
+ 2375.59          1931.28          "F4H" F4H             
+ 3158.68          4926.31          "F1H"                 
+ 2304.42          7942.18          "SH1H"                 
+ 2746.60          6207.48          "F2H"                 
+ 8110.19          3815.17          "Cold Water Line"                 
+ 6794.22          4574.83          "Hot Water Line"                 
+ 7038.78          8519.39          "LSL"                 
+ 6062.93          3520.41          "DWH"                 
+
+[BACKDROP]
+ DIMENSIONS     	0.00            	0.00            	10000.00        	10000.00        
+ UNITS          	None
+ FILE           	
+ OFFSET         	0.00            	0.00            
+
+[END]
