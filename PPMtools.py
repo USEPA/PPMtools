@@ -669,7 +669,7 @@ def DeleteContents(folder):
 # =============================================================================
 def MSXBinReader(filename, epanetinpfile):
     wn = wntr.network.WaterNetworkModel(epanetinpfile)
-    duration = wn.options.duration
+    duration = int(wn.options.time.duration)
     with open(filename, 'rb') as fin:
           ftype = '=f4'
           idlen = 32
