@@ -303,7 +303,8 @@ def update_patterns(wntr_obj, patterns, outfile):
         else:
             wntr_obj.add_pattern(patt, patterns[patt])
     
-    wntr_obj.write_inpfile(outfile, units='GPM')
+    wntr.network.io.write_inpfile(wntr_obj, outfile, units='GPM')
+    # wntr_obj.write_inpfile(outfile, units='GPM')
     
 
 # =============================================================================
